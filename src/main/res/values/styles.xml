@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoTitle" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fontFamily">@font/raleway_semibold</item>
+        <item name="android:textColor">@color/primary_text</item>
+
+
+        <!--To change the text styling of options menu items</item>-->
+        <item name="android:itemTextAppearance">@style/ActionMenuStyle</item>
+        <!--To change the background of items in options menu-->
+        <item name="android:itemBackground">@color/primary</item>
+        <item name="android:textColorSecondary">@color/primary_text</item>
+
+        <!--To change the Autocompletetextview dropdown menu styling</item>-->
+        <item name="android:autoCompleteTextViewStyle">@style/CustomAutocomplete</item>
+
+        <!--To change the preference menu switch styling</item>-->
+        <item name="android:colorControlActivated">@color/accent</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ActionMenuStyle">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/primary_text</item>
+        <item name="android:fontFamily">@font/raleway_semibold</item>
+    </style>
+
+    <style name="CustomAutocomplete">
+        <item name="android:dropDownSelector">@drawable/buttonshape</item>
+    </style>
+
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:fontFamily">@font/raleway_semibold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TimePickerTheme.ButtonBarStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:background">@color/primary</item>
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <!-- Weather info style -->
+
+    <style name="textBig" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">82sp</item>
+        <item name="android:textColor">@color/black_trans80</item>
+    </style>
+
+    <style name="textSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/black_trans80</item>
+    </style>
+
+    <style name="textVerySmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black_trans80</item>
+    </style>
+</resources>

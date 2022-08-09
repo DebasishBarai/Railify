@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flayout_s2s"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ui.tabs.S2S">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+
+                        <AutoCompleteTextView
+                            android:id="@+id/fromStationHint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_span="2"
+                            android:background="@drawable/buttonshape"
+                            android:drawableLeft="@drawable/vd_location"
+                            android:drawableRight="@drawable/current_location"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:hint="@string/hint_enter_from_station"
+                            android:padding="10dp"
+                            android:layout_marginRight="20dp"
+                            android:textColor="@color/primary_text"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:textCursorDrawable="@null" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+
+                        <AutoCompleteTextView
+                            android:id="@+id/toStationHint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_span="2"
+                            android:background="@drawable/buttonshape"
+                            android:drawableLeft="@drawable/vd_location"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:hint="@string/hint_enter_to_station"
+                            android:padding="10dp"
+                            android:layout_marginRight="20dp"
+                            android:textColor="@color/primary_text"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:textCursorDrawable="@null" />
+                    </TableRow>
+                </TableLayout>
+
+                <ImageButton
+                    android:id="@+id/buttonswapS2S"
+                    android:layout_width="@android:dimen/notification_large_icon_width"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/imagebackgroudcircular"
+                    android:contentDescription="@string/search_trains_swap_button"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/avd_swapvector"
+                    tools:ignore="RtlHardcoded" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                    <TextView
+                        android:id="@+id/s2s_train_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/date"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="18sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_span="2">
+                    <TextView
+                        android:id="@+id/buttonsearchAltS2S"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:drawableLeft="@drawable/vd_filter"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/directTrain"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/buttonSortS2S"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:drawableLeft="@drawable/vd_sort"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/departure"
+                        android:textColor="@color/primary_text"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.dd.processbutton.iml.ActionProcessButton
+                    android:id="@+id/buttonsearchS2S"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_span="2"
+                    android:adjustViewBounds="true"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="@string/search_trains_search_button"
+                    android:textColor="@color/primary_text"
+                    custom:pb_colorComplete="@color/green_complete"
+                    custom:pb_colorError="@color/red_error"
+                    custom:pb_colorNormal="@color/accent"
+                    custom:pb_colorPressed="@color/blue_pressed"
+                    custom:pb_colorProgress="@color/purple_progress"
+                    custom:pb_textComplete="Success"
+                    custom:pb_textError="Error"
+                    custom:pb_textProgress="Loading"
+                    tools:ignore="RtlHardcoded" />
+            </TableRow>
+
+        </TableLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewS2S"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutAnimation="@anim/layout_animation_fall_down" />
+    </LinearLayout>
+</FrameLayout>
+

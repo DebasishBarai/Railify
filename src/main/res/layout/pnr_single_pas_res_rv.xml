@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/primary_light"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="10dp">
+
+
+    <TableLayout
+        android:id="@+id/tablelayout_one"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="3">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/passenger_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Passenger no"
+                android:layout_gravity="center"
+                android:fontFamily="@font/raleway_semibold"
+                android:textColor="@color/primary_text" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/current_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="Current status"
+                android:layout_gravity="center"
+                android:fontFamily="@font/raleway_semibold"
+                android:textColor="@color/primary_text" />
+
+            <TextView
+                android:id="@+id/quota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Quota"
+                android:layout_gravity="center"
+                android:fontFamily="@font/raleway_semibold"
+                android:textColor="@color/primary_text" />
+
+        </TableRow>
+    </TableLayout>
+
+</androidx.cardview.widget.CardView>

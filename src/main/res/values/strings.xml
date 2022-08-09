@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Railify</string>
+    <string name="title_activity_main">Railify</string>
+    <string name="fragment_title_s2s">S2S</string>
+    <string name="fragment_title_tr">TRR</string>
+    <string name="fragment_title_pnrs">PNR</string>
+    <string name="fragment_title_avail">AVL</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Splash screen -->
+    <string name="welcome_to">Welcome to</string>
+
+    <!--  Station to station search -->
+    <string name="from_station">From</string>
+    <string name="to_station">To</string>
+    <string name="hint_enter_to_station">Destination Station</string>
+    <string name="hint_enter_from_station">Source Station</string>
+    <string name="search_trains_search_button">Search Trains</string>
+    <string name="search_trains_alt_search_button">Search Alternate Routes</string>
+    <string name="search_trains_swap_button">Swap</string>
+
+    <string name="train_no">Train</string>
+    <string name="hint_enter_train_no">Train No./Name</string>
+    <string name="date">All Day</string>
+    <string name="onboard_train">I am in this train</string>
+    <string name="quota">Quotatype</string>
+    <string name="defaultTrainNum">00001</string>
+    <string name="defaultTrainName">Nad Ujn Passenger</string>
+
+    <!--<string-array name="quotaTypeArray">
+        <item>General</item>
+        <item>Tatkal</item>
+        <item>Ladies</item>
+        <item>Handicaped</item>
+    </string-array>-->
+
+    <string name="quotatypeGeneral">General</string>
+    <string name="quotatypeTatkal">Tatkal</string>
+    <string name="quotatypeLadies">Ladies</string>
+    <string name="quotatypeHandicapped">Handicapped</string>
+
+    <string-array name="searchalternateroutearray">
+        <item>Direct</item>
+        <item>One stop</item>
+        <item>Both</item>
+    </string-array>
+
+    <string name="directTrain">Direct</string>
+    <string name="alternateTrain">One stop</string>
+    <string name="both">Both</string>
+
+    <string-array name="spinnersortS2S">
+        <item>Dep</item>
+        <item>Arr</item>
+        <item>Travel Time</item>
+    </string-array>
+
+    <string name="departure">Departure</string>
+    <string name="arrival">Arrival</string>
+    <string name="traveltime">Travel Time</string>
+    <string name="rv_to_station">to_station</string>
+    <string name="rv_train_code">train_code</string>
+    <string name="rv_sch_arr">sch_arr</string>
+    <string name="rv_train_name">train_name</string>
+    <string name="rv_from_station">from_station</string>
+    <string name="rv_sch_dep">sch_dep</string>
+    <string name="rv_runs_on">Run Days</string>
+
+    <!-- Train route view -->
+    <string name="train_route_search_button">View Route</string>
+    <string name="dist_tr">dist</string>
+    <string name="pf_tr">pf</string>
+    <string name="day_tr">day</string>
+    <string name="schdep_tr">schdep</string>
+    <string name="stnname_tr">stnname</string>
+    <string name="scharr_tr">scharr</string>
+    <string name="todo">TODO</string>
+
+
+    <!-- Query Availability -->
+    <string name="buttonqueryavl">Query</string>
+    <string name="textview_avl"> </string>
+    <string name="avl_class_text_1a">1A</string>
+    <string name="avl_class_text_2a">2A</string>
+    <string name="avl_class_text_3a">3A</string>
+    <string name="avl_class_text_cc">CC</string>
+    <string name="avl_class_text_fc">FC</string>
+    <string name="avl_class_text_sl">SL</string>
+    <string name="avl_class_text_2s">2S</string>
+    <string name="avl_class_text_3e">3E</string>
+
+    <!-- Menu items -->
+    <string name="menu_rate_app">Rate this app</string>
+    <string name="menu_suggest_feature">Suggest a feature</string>
+    <string name="menu_feedback">Write to us</string>
+    <string name="menu_share_in_whatsapp">share_in_whatsapp</string>
+    <string name="menu_share_app">Share this app</string>
+
+    <!-- Strings related to Settings -->
+    <string name="title_activity_settings">Settings</string>
+    <string name="settv_cache_store_size_kbs">Cache store size (KBs):</string>
+    <string name="settv_cache_store_time_secs">Cache store time (secs):</string>
+    <string name="settv_update_period_days">Update period (days):</string>
+    <string name="st_tv_settings">Settings</string>
+
+    <!-- Updater -->
+    <string name="upd_channel_id">dbupdater</string>
+
+    <!-- S2S popup menu -->
+    <string name="ps2s_view_route">View route</string>
+    <string name="ps2s_find_availability">Find availability</string>
+
+    <!-- PNRS -->
+    <string name="pnrs_tv1">PNR</string>
+    <string name="pnrs_querybutton">Get PNR Status</string>
+    <string name="pnrs_hint_text">Enter PNR Number</string>
+    <string name="textview_pnrs" />
+    <string name="plvw_photo_desc">Photo</string>
+    <string name="plvw_scene">scene</string>
+    <string name="plvw_txt_region">Region</string>
+    <string name="plvw_txt_weather_condition">Weather Condition</string>
+    <string name="plvw_txt_temperature_c">Temperature (C)</string>
+    <string name="plvw_txt_humidity">Humidity (%)</string>
+    <string name="plvw_txt_pressure_mbar">Pressure (mbar)</string>
+    <string name="plvw_txt_place_title">Place Name</string>
+    <string name="plvw_txt_place_distance">Distance</string>
+    <string name="plvw_txt_place_location">Location</string>
+    <string name="please_wait">Please wait</string>
+    <string name="downloading_database">Downloading database</string>
+    <string name="database_download_success">Database download success</string>
+    <string name="database_download_fail">Database download fail</string>
+    <string name="downloadDatabase">Download database</string>
+    <string name="wantToDownloadDatabaseNow">Want to download database now?</string>
+    <string name="download">Download</string>
+    <string name="cancel">Cancel</string>
+    <string name="sd_card_not_found">SD card not found</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_onboarding2">onboardingActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!-- onboarding -->
+    <string name="section_format">Page %1$d</string>
+
+    <string name="show_nearest_station">Show nearest station Button</string>
+</resources>

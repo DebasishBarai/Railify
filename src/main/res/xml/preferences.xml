@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="show_nearest_station"
+        android:summary="Turn this on to show nearest station button in source station"
+        android:title="@string/show_nearest_station"
+        android:icon="@drawable/vd_location"
+        android:background="@color/primary_light"
+        android:fontFamily="@font/raleway_semibold"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"/>
+</PreferenceScreen>

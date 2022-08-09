@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flayout_avl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ui.tabs.AVL">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/avl_train_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:background="@drawable/buttonshape"
+                    android:drawableLeft="@drawable/ic_baseline_train_24"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/hint_enter_train_no"
+                    android:padding="10dp"
+                    android:textColor="@color/primary_text"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textCursorDrawable="@null" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+
+                <Spinner
+                    android:id="@+id/fromStationHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/primary_light"
+                    android:gravity="left|center_vertical"
+                    android:minHeight="42dp"
+                    android:spinnerMode="dropdown" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <Spinner
+                    android:id="@+id/toStationHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/primary_light"
+                    android:gravity="left|center_vertical"
+                    android:minHeight="42dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_span="2"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/train_avl_train_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="@string/date"
+                        android:textColor="@color/primary_text"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/quotaType"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:drawableLeft="@drawable/vd_filter"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="@string/quotatypeGeneral"
+                        android:textColor="@color/primary_text"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
+
+                <com.dd.processbutton.iml.ActionProcessButton
+                    android:id="@+id/buttonqueryAVL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_span="2"
+                    android:adjustViewBounds="true"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="@string/buttonqueryavl"
+                    android:textColor="@color/primary_text"
+                    custom:pb_colorComplete="@color/green_complete"
+                    custom:pb_colorError="@color/red_error"
+                    custom:pb_colorNormal="@color/accent"
+                    custom:pb_colorPressed="@color/blue_pressed"
+                    custom:pb_colorProgress="@color/purple_progress"
+                    custom:pb_textComplete="Success"
+                    custom:pb_textError="Error"
+                    custom:pb_textProgress="Loading"
+                    tools:ignore="RtlHardcoded" />
+            </TableRow>
+        </TableLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs_avl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="scrollable"
+                android:fontFamily="@font/raleway_semibold"
+                app:titleTextColor="@color/primary_text">
+
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/avl_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/raleway_semibold"
+                app:titleTextColor="@color/primary_text"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+

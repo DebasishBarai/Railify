@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "347250184867",
+    "firebase_url": "https://railify.firebaseio.com",
+    "project_id": "railify",
+    "storage_bucket": "railify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347250184867:android:a75bfed5b10895592b6516",
+        "android_client_info": {
+          "package_name": "com.arcticwolflabs.railify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347250184867-8a1dd871jmj2bil0h1elf8tiuu6v37vu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arcticwolflabs.railify",
+            "certificate_hash": "0932d702aad3c25a649a21b2903b94b9feaa371b"
+          }
+        },
+        {
+          "client_id": "347250184867-voon1u6djajksfa0554sl9886b6vrt9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZMa6kDuB_rgmLXieWho6Sc1l7RmJ1FlQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347250184867-voon1u6djajksfa0554sl9886b6vrt9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

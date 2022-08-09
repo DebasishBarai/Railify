@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/ps2s_one"
+        android:title="@string/ps2s_view_route" />
+    <item
+        android:id="@+id/ps2s_two"
+        android:title="@string/ps2s_find_availability" />
+
+</menu>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.kobakei:ratethisapp:1.2.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-6.8.2-all/gradle-6.8.2/caches/transforms-2/files-2.1/491776d96bfaf2d6da9b3f76c3044789/jetified-ratethisapp-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-6.8.2-all/gradle-6.8.2/caches/transforms-2/files-2.1/491776d96bfaf2d6da9b3f76c3044789/jetified-ratethisapp-1.2.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.8.2-all/gradle-6.8.2/caches/transforms-2/files-2.1/491776d96bfaf2d6da9b3f76c3044789/jetified-ratethisapp-1.2.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.8.2-all/gradle-6.8.2/caches/modules-2/files-2.1/io.github.kobakei/ratethisapp/1.2.0/9435df577e458fda32a82ae6cc6d302ad2dd89bd/ratethisapp-1.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.8.2-all/gradle-6.8.2/caches/modules-2/files-2.1/io.github.kobakei/ratethisapp/1.2.0/a37faf62c2cfcd8ec506357413fffde78a8416ec/ratethisapp-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/primary_extra_light"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:contentPadding="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#fff3e0"
+    android:id="@+id/s2s_rv_double_journey_layout">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/tablelayout_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/train_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/rv_train_code"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/raleway_semibold"/>
+
+                <TextView
+                    android:id="@+id/train_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="3"
+                    android:text="@string/rv_train_name"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/raleway_semibold"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/from_station"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/rv_from_station"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/raleway_semibold"/>
+
+                <TextView
+                    android:id="@+id/sch_dep_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/rv_sch_dep"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/raleway_semibold"/>
+
+                <TextView
+                    android:id="@+id/to_station_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/rv_to_station"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/raleway_semibold"/>
+
+                <TextView
+                    android:id="@+id/sch_arr_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/rv_sch_arr"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/raleway_semibold"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/runs_on_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/rv_runs_on"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:fontFamily="@font/raleway_semibold"/>
+            </TableRow>
+
+        </TableLayout>
+
+
+        <TableLayout
+            android:id="@+id/tablelayout_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/train_code_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/rv_train_code"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/raleway_semibold"/>
+
+                <TextView
+                    android:id="@+id/train_name_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="3"
+                    android:text="@string/rv_train_name"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/raleway_semibold"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/from_station_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/rv_from_station"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/raleway_semibold"/>
+
+                <TextView
+                    android:id="@+id/sch_dep_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/rv_sch_dep"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/raleway_semibold"/>
+
+                <TextView
+                    android:id="@+id/to_station_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/rv_to_station"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/raleway_semibold"/>
+
+                <TextView
+                    android:id="@+id/sch_arr_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/rv_sch_arr"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/raleway_semibold"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/runs_on_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/rv_runs_on"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:fontFamily="@font/raleway_semibold"/>
+
+                <TextView
+                    android:id="@+id/total_travel_time_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:gravity="right"
+                    android:text="travel time"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/raleway_semibold"/>
+            </TableRow>
+
+        </TableLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

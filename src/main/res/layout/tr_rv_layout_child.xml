@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tr_rv_child_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:backgroundTint="@color/primary_extra_light"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:contentPadding="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#fff3e0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/child_stn_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="@string/stnname_tr"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:textColor="@color/primary_text"  />
+
+                <TextView
+                    android:id="@+id/child_sch_dep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/schdep_tr"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:textColor="@color/primary_text"  />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/child_day_train"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/day_tr"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:textColor="@color/primary_text"  />
+
+
+                <TextView
+                    android:id="@+id/child_dist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/dist_tr"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:textColor="@color/primary_text"  />
+
+            </TableRow>
+
+
+        </TableLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

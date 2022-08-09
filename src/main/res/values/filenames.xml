@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stationsdbfname">debasish_stations.updated.geo_coord.db</string>
+    <string name="trainsdbfname">trainsdb.0.99999.db</string>
+    <string name="station2trainsdbfname">station2trains.db</string>
+    <string name="physiographydbfname">physiography.db</string>
+    <string name="cgraphdbfname">directconnect_graph.db</string>
+
+</resources>

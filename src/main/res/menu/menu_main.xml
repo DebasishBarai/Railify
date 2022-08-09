@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.arcticwolflabs.railify.MainActivity"
+    tools:ignore="ExtraText">
+    <!--<item
+        android:id="@+id/action_settings"
+        android:orderInCategory="10"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>-->
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="20"
+        android:icon="@drawable/ic_share_blue_24dp"
+        android:title="@string/menu_share_app"/>
+    <item
+        android:id="@+id/action_rate_app"
+        android:orderInCategory="30"
+        android:icon="@drawable/ic_rate_review"
+        android:title="@string/menu_rate_app"/>
+
+    <item
+        android:id="@+id/action_feedback"
+        android:orderInCategory="40"
+        android:icon="@drawable/ic_feedback_black_24dp"
+        android:title="@string/menu_feedback"/>
+    <!--    <item
+            android:id="@+id/action_suggest_feature"
+            android:orderInCategory="50"
+            android:title="@string/menu_suggest_feature"
+            app:showAsAction="never" />-->
+</menu>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flayout_place"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".ui.tabs.PLC">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:stretchColumns="2">
+
+                <TableRow>
+
+                    <com.dd.processbutton.iml.ActionProcessButton
+                        android:id="@+id/plvw_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_span="2"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:text="placeView"
+                        android:textSize="20sp"
+                        android:adjustViewBounds="true"
+                        android:textColor="@color/primary_text"
+                        custom:pb_colorComplete="@color/green_complete"
+                        custom:pb_colorError="@color/red_error"
+                        custom:pb_colorNormal="@color/accent"
+                        custom:pb_colorPressed="@color/blue_pressed"
+                        custom:pb_colorProgress="@color/purple_progress"
+                        custom:pb_textComplete="Success"
+                        custom:pb_textError="Error"
+                        custom:pb_textProgress="Loading" />
+                </TableRow>
+
+<!--                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/plvw_scene"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:layout_weight="2"
+                        android:contentDescription="@string/plvw_scene"
+                        app:srcCompat="@color/colorPrimaryDark" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:layout_weight="2"
+                        android:text=""
+                        android:textSize="30dp"
+                        android:visibility="gone"/>
+                </TableRow>-->
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        app:cardBackgroundColor="#fff3e0"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/plvw_phy_l"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="@string/plvw_txt_region"
+                            android:textColor="#880e4f"
+                            android:textSize="24dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/plvw_phy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="clip_vertical|end"
+                            android:text=""
+                            android:textSize="24dp"
+                            android:textColor="@android:color/holo_orange_dark"/>
+                    </androidx.cardview.widget.CardView>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:layout_weight="2"
+                        android:text=""
+                        android:textSize="30sp"
+                        android:visibility="gone"/>
+                </TableRow>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weather">
+                </FrameLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    custom:cardBackgroundColor="@color/primary_light"
+                    custom:cardCornerRadius="10dp"
+                    custom:cardElevation="2dp"
+                    custom:cardUseCompatPadding="true"
+                    custom:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_span="2"
+                            android:layout_weight="2"
+                            android:id="@+id/region"
+                            android:text="Region"
+                            android:textSize="30sp"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:textColor="@color/primary_text"/>
+                        <RelativeLayout
+                            android:id="@+id/tempLyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/region">
+
+                            <TextView
+                                android:id="@+id/temp"
+                                style="@style/textBig"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="30"
+                                android:fontFamily="@font/raleway_semibold"
+                                android:textColor="@color/primary_text" />
+
+                            <TextView
+                                android:id="@+id/weather_condition"
+                                style="@style/textSmall"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/temp"
+                                android:layout_alignLeft="@id/temp"
+                                android:layout_marginTop="0dp"
+                                android:maxLines="1"
+                                android:text="Weather condition"
+                                android:fontFamily="@font/raleway_semibold"
+                                android:textColor="@color/primary_text"/>
+
+                            <ImageView
+                                android:id="@+id/imgWeather"
+                                android:layout_width="140dp"
+                                android:layout_height="105dp"
+                                android:layout_alignTop="@id/temp"
+                                android:layout_marginLeft="148dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_toRightOf="@id/temp" />
+
+                            <TextView
+                                android:id="@+id/tempUnit"
+                                style="@style/textSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@id/temp"
+                                android:layout_alignStart="@id/imgWeather"
+                                android:layout_marginStart="-145dp"
+                                android:layout_marginLeft="3dp"
+                                android:layout_toRightOf="@id/temp"
+                                android:text="\u2103"
+                                android:fontFamily="@font/raleway_semibold"
+                                android:textColor="@color/primary_text"/>
+
+                            <TextView
+                                android:id="@+id/descrWeather"
+                                style="@style/textSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imgWeather"
+                                android:layout_alignStart="@id/tempUnit"
+                                android:layout_toRightOf="@id/temp" />
+
+                        </RelativeLayout>
+
+                        <!--    Here the current weather data-->
+
+
+                        <!--    Wind data-->
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:id="@+id/windIcon"
+                            android:src="@drawable/vd_wind"
+                            android:layout_below="@id/tempLyt"
+                            android:layout_marginTop="10dp"  />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/windSpeed"
+                            android:layout_toRightOf="@id/windIcon"
+                            android:layout_alignBottom="@id/windIcon"
+                            android:layout_marginLeft="10dp"
+                            style="@style/textSmall"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:textColor="@color/primary_text"/>
+
+                        <!--    End wind Data-->
+
+                        <!--    Humidity-->
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:id="@+id/humidityIcon"
+                            android:src="@drawable/vd_humidity"
+                            android:layout_below="@id/windIcon"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/humidity"
+                            android:layout_toRightOf="@id/humidityIcon"
+                            android:layout_alignBottom="@id/humidityIcon"
+                            android:layout_alignStart="@id/windSpeed"
+                            android:layout_marginLeft="10dp"
+                            style="@style/textSmall"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:textColor="@color/primary_text"/>
+
+                        <!--    End Humidity Data-->
+
+                        <!--    Pressure data-->
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:id="@+id/pressureIcon"
+                            android:src="@drawable/vd_pressure"
+                            android:layout_below="@id/humidityIcon"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pressure"
+                            android:layout_toRightOf="@id/pressureIcon"
+                            android:layout_alignBottom="@id/pressureIcon"
+                            android:layout_alignStart="@id/windSpeed"
+                            android:layout_marginLeft="10dp"
+                            style="@style/textSmall"
+                            tools:ignore="NotSibling"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:textColor="@color/primary_text"/>
+
+                        <!--    End Pressure data-->
+
+                    </RelativeLayout>
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="left"
+                        android:weightSum="3">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/plvw_weath"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/plvw_txt_weather_condition"
+                                android:textSize="24dp"
+                                android:textColor="#880e4f"/>
+
+                            <TextView
+                                android:id="@+id/plvw_weath_res"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="clip_vertical|end"
+                                android:text=""
+                                android:textSize="24dp"
+                                android:textColor="@android:color/holo_orange_dark"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/plvw_temp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/plvw_txt_temperature_c"
+                                android:textSize="24dp"
+                                android:textColor="#880e4f"/>
+
+                            <TextView
+                                android:id="@+id/plvw_temp_res"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="clip_vertical|end"
+                                android:text=""
+                                android:textSize="24dp"
+                                android:textColor="@android:color/holo_orange_dark"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/plvw_humid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/plvw_txt_humidity"
+                                android:textSize="24dp"
+                                android:textColor="#880e4f"/>
+
+
+                            <TextView
+                                android:id="@+id/plvw_humid_res"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="clip_vertical|end"
+                                android:text=""
+                                android:textSize="24dp"
+                                android:textColor="@android:color/holo_orange_dark"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/plvw_press"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/plvw_txt_pressure_mbar"
+                                android:textSize="24dp"
+                                android:textColor="#880e4f"/>
+
+                            <TextView
+                                android:id="@+id/plvw_press_res"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="clip_vertical|end"
+                                android:text=""
+                                android:textSize="24dp"
+                                android:textColor="@android:color/holo_orange_dark"/>
+                        </TableRow>
+                    </LinearLayout>-->
+                </androidx.cardview.widget.CardView>
+
+            </TableLayout>
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                app:cardBackgroundColor="@color/primary_light"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp">
+            <TableLayout
+                android:id="@+id/tbl_lyt_nby_plc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="?android:attr/dividerHorizontal"
+                android:showDividers="middle"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.dd.processbutton.iml.ActionProcessButton
+                        android:layout_weight="2"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/plvw_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_span="2"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="Places Nearby"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:textColor="@color/primary_text"
+                        custom:pb_colorComplete="@color/green_complete"
+                        custom:pb_colorError="@color/red_error"
+                        custom:pb_colorNormal="@color/accent"
+                        custom:pb_colorPressed="@color/blue_pressed"
+                        custom:pb_colorProgress="@color/purple_progress"
+                        custom:pb_textComplete="Success"
+                        custom:pb_textError="Error"
+                        custom:pb_textProgress="Places Nearby" />
+                         />
+
+                </TableRow>
+
+            </TableLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
